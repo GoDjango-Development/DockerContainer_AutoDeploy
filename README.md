@@ -11,7 +11,9 @@ The next steps should be only do once:
 - nano /etc/ssh/sshd_config and change this line #PermitRootLogin prohibit-password for PermitRootLogin yes
   
 Install any other software you need in your automated predefined container image.
+
 Copy the ssh_loop.sh script content to the file /etc/init.d/ssh_loop.sh
+
 Run chmod 0777 /etc/init.d/ssh_loop.sh
 
 - exit
