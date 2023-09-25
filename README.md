@@ -1,18 +1,18 @@
-#This is an automation script for deploy an ssh ready container.
+##This is an automation script for deploy an ssh ready container.
 
 The next steps should be only do once:
 
 - docker run -d -it --name exm debian:latest bash
-/* could be any other distro you want. */
+# could be any other distro you want.
 - docker exec -it exm bash
 - apt-get update
 - apt-get install ssh
 - apt-get install nano
 - nano /etc/ssh/sshd_config
-/* change this line #PermitRootLogin prohibit-password by
+# change this line #PermitRootLogin prohibit-password by
  PermitRootLogin yes */
 - service ssh restart
-/* Install any other software you need in your automated predefined container image. */
+#Install any other software you need in your automated predefined container image.
 - exit
 - docker commit exm name_you_want
 
