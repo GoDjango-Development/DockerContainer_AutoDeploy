@@ -12,7 +12,7 @@ echo -n "Enter container CPUs (i.e 0 or 0,1,2): "
 read cpus
 echo -n "Enter container RAM (i.e 500M or 1.5G): "
 read ramsz
-echo -n "Enter storage size:(i.e 5g)"
+echo -n "Enter storage size (i.e 5g): "
 read stgsize
 password=$(head -c 30 /dev/urandom | sha256sum | cut -f 1 -d " ")
 docker volume create -d local -o size=1g $username
